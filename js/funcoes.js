@@ -8,8 +8,11 @@ while (tentativas > 0) {
     if (chute == numeroSecreto) {
         alert("Parabéns, você acertou!");
         break;
-    } else {
-        alert("Que pena, tente de novo.");
+    } else if(numeroSecreto > chute) {
+        alert("O número secreto é maior que o chute.");
+        tentativas = tentativas - 1;
+    }else if(numeroSecreto < chute){
+        alert("O número secreto é menor que o chute");
         tentativas = tentativas - 1;
     }
 }
