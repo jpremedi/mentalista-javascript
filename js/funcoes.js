@@ -1,4 +1,4 @@
-let numeroSecreto = 4;
+let numeroSecreto = parseInt(Math.random() * 10);
 
 let tentativas = 3;
 
